@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #ecf0f1;
+}
+
+#wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+
+#buttons {
+    display: inline-block;
+    line-height: 3;
+}
+
+a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: #3498db;
+    border-radius: 5px;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #2980b9;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: #34495e;
+    border: 2px solid #bdc3c7;
+    background-color: #bdc3c7;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input[type=text]:focus {
+    border: 2px solid #cad1d6;
+    background-color: #cad1d6;
+}
+
+#logo {
+    animation-duration: 0.8s;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
