@@ -1,6 +1,6 @@
 # LeogosStart
 
-Just a page with the logo of a search bar and forwarding options
+Just a page with the logo and a search bar and forwarding options
 
 ## Arguments
 | name   | value                                      |
