@@ -3,7 +3,7 @@
 Just a page with the logo and a search bar and forwarding options
 
 ## Arguments
-| name   | value                                      |
+| Name   | Value                                      |
 | ------ | ------------------------------------------ |
 | engine | google, duckduckgo, bing, ecosia           |
 | curl   | for example: https://www.ecosia.org/search |
