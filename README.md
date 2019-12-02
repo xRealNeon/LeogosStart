@@ -9,3 +9,9 @@ Just a page with the logo and a search bar and forwarding options
 | curl   | for example: https://www.ecosia.org/search |
 | cparam | for example: q                             |
 | cname  | for example: Ecosia                        |
+
+## Commands
+| Name            | Example                                                          |
+| --------------- | ---------------------------------------------------------------- |
+| setEngine       | setEngine("ecosia");                                             |
+| setCustomEngine | setCustomEngine("https://www.ecosia.org/search", "q", "Ecosia"); |
