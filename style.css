@@ -34,10 +34,7 @@ body {
 }
 
 a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding: 10px 13px 10px 13px;
     background-color: #3498db;
     border-radius: 5px;
     color: #ecf0f1;

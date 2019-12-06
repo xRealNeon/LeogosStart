@@ -6,19 +6,6 @@ var customname = url.searchParams.get("cname");
 var sform = document.getElementById("search");
 var sfield = document.getElementById("searchf");
 
-console.log("Gratulation, du hast die Developer Tools gefunden dann zeige ich dir wie du die Suchmaschine ändern kannst.");
-console.log("Mit dem Parameter \"engine\" kannst du zwichen Google, Duckduckgo, Bing und Ecosia wechseln.");
-console.log("Wenn du eine andere Suchmaschine benutzen willst, kannst du die url der Suchmaschine mit dem \"curl\" Parameter, den Such Parameter mit dem \"cparam\" Parameter und den Namen mit dem \"cname\" Parameter setzen.");
-console.log("Du kannst auch hier in der Konsole mit der \"setCustomEngine\" funktion testen.");
-console.log("Beispiel: " + url.origin + url.pathname + "?engine=ecosia");
-console.log("Beispiel: " + url.origin + url.pathname + "?curl=https://www.ecosia.org/search&cparam=q&cname=Ecosia");
-console.log("Beispiel: setCustomEngine(\"https://www.ecosia.org/search\", \"q\", \"Ecosia\");");
-console.log();
-console.log();
-
-setEngine(engine == null ? null : engine.toLowerCase());
-setCustomEngine(customurl, customparam, customname);
-
 function setEngine(name) {
     switch (name) {
         case "google":
@@ -66,3 +53,16 @@ function setCustomEngine(icustomurl, icustomparam, icustomname) {
         sfield.placeholder = icustomname + " Suche";
     }
 }
+
+console.log("Gratulation, du hast die Developer Tools gefunden dann zeige ich dir wie du die Suchmaschine ändern kannst.");
+console.log("Mit dem Parameter \"engine\" kannst du zwichen Google, Duckduckgo, Bing und Ecosia wechseln.");
+console.log("Wenn du eine andere Suchmaschine benutzen willst, kannst du die url der Suchmaschine mit dem \"curl\" Parameter, den Such Parameter mit dem \"cparam\" Parameter und den Namen mit dem \"cname\" Parameter setzen.");
+console.log("Du kannst auch hier in der Konsole mit der \"setCustomEngine\" funktion testen.");
+console.log("Beispiel: " + url.origin + url.pathname + "?engine=ecosia");
+console.log("Beispiel: " + url.origin + url.pathname + "?curl=https://www.ecosia.org/search&cparam=q&cname=Ecosia");
+console.log("Beispiel: setCustomEngine(\"https://www.ecosia.org/search\", \"q\", \"Ecosia\");");
+console.log();
+console.log();
+
+setEngine(engine == null ? null : engine.toLowerCase());
+setCustomEngine(customurl, customparam, customname);
