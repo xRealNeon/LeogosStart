@@ -1,4 +1,6 @@
 # LeogosStart
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783947895-cb92b658ad37e9aad948cbf6)
+![GitHub last commit](https://img.shields.io/github/last-commit/xRealNeon/LeogosStart)
 
 Just a page with the logo and a search bar and forwarding options
 
