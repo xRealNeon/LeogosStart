@@ -63,7 +63,7 @@ function openProjects() {
         showCloseButton: true,
         focusConfirm: false,
         confirmButtonText: 'ok',
-    })
+    });
 }
 
 console.log("Gratulation, du hast die Developer Tools gefunden dann zeige ich dir wie du die Suchmaschine ändern kannst.");
