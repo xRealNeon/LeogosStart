@@ -54,6 +54,18 @@ function setCustomEngine(icustomurl, icustomparam, icustomname) {
     }
 }
 
+function openProjects() {
+    Swal.fire({
+        title: '<strong>Projekte</strong>',
+        html: '<a href="https://wordpress.nibis.de/leogos/">Schülerfirma R4e1</a><br>' +
+            '<a href="https://leogos.de/titan-lg/">Titan-LG (Riesen-3D-Drucker)</a><br>' +
+            '<a href="https://leogos.de/marco.nicolai/_/Planetarium/index_.htm">Planetarium</a>',
+        showCloseButton: true,
+        focusConfirm: false,
+        confirmButtonText: 'ok',
+    })
+}
+
 console.log("Gratulation, du hast die Developer Tools gefunden dann zeige ich dir wie du die Suchmaschine ändern kannst.");
 console.log("Mit dem Parameter \"engine\" kannst du zwichen Google, Duckduckgo, Bing und Ecosia wechseln.");
 console.log("Wenn du eine andere Suchmaschine benutzen willst, kannst du die url der Suchmaschine mit dem \"curl\" Parameter, den Such Parameter mit dem \"cparam\" Parameter und den Namen mit dem \"cname\" Parameter setzen.");

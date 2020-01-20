@@ -11,6 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <title>Leogos</title>
 </head>
 
@@ -21,11 +22,10 @@
             <input id="searchf" type="text" autofocus name="q" placeholder="Google Suche">
         </form>
         <div id="buttons">
-            <a href="https://leogos.de/iserv">IServ</a>
-            <a href="http://leonore-goldschmidt-schule.de">Homepage</a>
-            <a href="https://wordpress.nibis.de/leogos">R4e1</a>
-            <a href="https://leogos.de/titan-lg">Titan-LG</a>
-            <a href="https://leogos.de/marco.nicolai/_/Planetarium/index_.htm">Planetarium</a>
+            <a class="btn" href="https://leogos.de/iserv">IServ</a>
+            <a class="btn" href="https://alles-banane.webmenue.info/login.aspx">Mensa</a>
+            <a class="btn" href="http://leonore-goldschmidt-schule.de">Homepage</a>
+            <a class="btn" href="#" onclick="openProjects()">Projekte</a>
         </div>
     </div>
 </body>
