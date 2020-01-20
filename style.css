@@ -54,6 +54,7 @@ a:hover {
 
 .btn:hover {
     background-color: #2980b9;
+    color: #ecf0f1;
 }
 
 input[type=text] {
