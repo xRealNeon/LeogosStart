@@ -9,27 +9,27 @@ var sfield = document.getElementById("searchf");
 function setEngine(name) {
     switch (name) {
         case "google":
-            console.log("Suchmaschine gesetzt auf: Google");
+            console.log("%cSuchmaschine gesetzt auf: Google", "color: Lime; font-size: 15px;");
             sfield.placeholder = "Google Suche";
             sform.action = "https://www.google.de/search";
             break;
         case "duckduckgo":
-            console.log("Suchmaschine gesetzt auf: Duckduckgo");
+            console.log("%cSuchmaschine gesetzt auf: Duckduckgo", "color: Lime; font-size: 15px;");
             sfield.placeholder = "Duckduckgo Suche";
             sform.action = "https://duckduckgo.com/";
             break;
         case "bing":
-            console.log("Suchmaschine gesetzt auf: Bing");
+            console.log("%cSuchmaschine gesetzt auf: Bing", "color: Lime; font-size: 15px;");
             sfield.placeholder = "Bing Suche";
             sform.action = "https://www.bing.com/search";
             break;
         case "ecosia":
-            console.log("Suchmaschine gesetzt auf: Ecosia");
+            console.log("%cSuchmaschine gesetzt auf: Ecosia", "color: Lime; font-size: 15px;");
             sfield.placeholder = "Ecosia Suche";
             sform.action = "https://www.ecosia.org/search";
             break;
         default:
-            console.log("Suchmaschine gesetzt auf: Google");
+            console.log("%cSuchmaschine gesetzt auf: Google", "color: Lime; font-size: 15px;");
             sfield.placeholder = "Google Suche";
             break;
     }
@@ -39,17 +39,17 @@ function setCustomEngine(icustomurl, icustomparam, icustomname) {
     if (icustomurl != null) {
         var surl = new URL(icustomurl);
         sfield.placeholder = surl.hostname + " Suche";
-        console.log("Benutzerdefinierte Such-URL festgelegt: " + icustomurl);
+        console.log("%cBenutzerdefinierte Such-URL festgelegt: " + icustomurl, "color: Lime; font-size: 15px;");
         sform.action = icustomurl;
     }
 
     if (icustomparam != null) {
-        console.log("Benutzerdefinierten Suchparameter festgelegt: " + icustomparam);
+        console.log("%cBenutzerdefinierten Suchparameter festgelegt: " + icustomparam, "color: Lime; font-size: 15px;");
         sfield.name = icustomparam;
     }
 
     if (icustomname != null) {
-        console.log("Benutzerdefinierten Name festgelegt: " + icustomname);
+        console.log("%cBenutzerdefinierten Name festgelegt: " + icustomname, "color: Lime; font-size: 15px;");
         sfield.placeholder = icustomname + " Suche";
     }
 }
@@ -66,13 +66,13 @@ function openProjects() {
     });
 }
 
-console.log("Gratulation, du hast die Developer Tools gefunden dann zeige ich dir wie du die Suchmaschine ändern kannst.");
-console.log("Mit dem Parameter \"engine\" kannst du zwichen Google, Duckduckgo, Bing und Ecosia wechseln.");
-console.log("Wenn du eine andere Suchmaschine benutzen willst, kannst du die url der Suchmaschine mit dem \"curl\" Parameter, den Such Parameter mit dem \"cparam\" Parameter und den Namen mit dem \"cname\" Parameter setzen.");
-console.log("Du kannst auch hier in der Konsole mit der \"setCustomEngine\" funktion testen.");
-console.log("Beispiel: " + url.origin + url.pathname + "?engine=ecosia");
-console.log("Beispiel: " + url.origin + url.pathname + "?curl=https://www.ecosia.org/search&cparam=q&cname=Ecosia");
-console.log("Beispiel: setCustomEngine(\"https://www.ecosia.org/search\", \"q\", \"Ecosia\");");
+console.log("%cGratulation, du hast die Developer Tools gefunden dann zeige ich dir wie du die Suchmaschine ändern kannst.", "color: Crimson; font-size: 20px;");
+console.log("%cMit dem Parameter \"engine\" kannst du zwichen Google, Duckduckgo, Bing und Ecosia wechseln.", "color: DarkCyan; font-size: 15px;");
+console.log("%cWenn du eine andere Suchmaschine benutzen willst, kannst du die url der Suchmaschine mit dem \"curl\" Parameter, den Such Parameter mit dem \"cparam\" Parameter und den Namen mit dem \"cname\" Parameter setzen.", "color: DarkCyan; font-size: 15px;");
+console.log("%cDu kannst auch hier in der Konsole mit der \"setCustomEngine\" funktion testen.", "color: DarkCyan; font-size: 15px;");
+console.log("%cBeispiel: " + url.origin + url.pathname + "?engine=ecosia", "color: ForestGreen; font-size: 15px;");
+console.log("%cBeispiel: " + url.origin + url.pathname + "?curl=https://www.ecosia.org/search&cparam=q&cname=Ecosia", "color: ForestGreen; font-size: 15px;");
+console.log("%cBeispiel: setCustomEngine(\"https://www.ecosia.org/search\", \"q\", \"Ecosia\");", "color: ForestGreen; font-size: 15px;");
 console.log();
 console.log();
 
