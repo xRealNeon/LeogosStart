@@ -62,7 +62,7 @@ function openProjects() {
             '<a href="https://leogos.de/marco.nicolai/_/Planetarium/index_.htm">Planetarium</a>',
         showCloseButton: true,
         focusConfirm: false,
-        confirmButtonText: 'ok',
+        confirmButtonText: 'OK',
     });
 }
 
@@ -70,11 +70,10 @@ console.log("%cGratulation, du hast die Developer Tools gefunden dann zeige ich 
 console.log("%cMit dem Parameter \"engine\" kannst du zwichen Google, Duckduckgo, Bing und Ecosia wechseln.", "color: DarkCyan; font-size: 15px;");
 console.log("%cWenn du eine andere Suchmaschine benutzen willst, kannst du die url der Suchmaschine mit dem \"curl\" Parameter, den Such Parameter mit dem \"cparam\" Parameter und den Namen mit dem \"cname\" Parameter setzen.", "color: DarkCyan; font-size: 15px;");
 console.log("%cDu kannst auch hier in der Konsole mit der \"setCustomEngine\" funktion testen.", "color: DarkCyan; font-size: 15px;");
+console.log("%cWenn du den Code sehen willst kannste ja mal auf Github vorbeischauen https://github.com/xRealNeon/LeogosStart.", "color: DarkCyan; font-size: 15px;");
 console.log("%cBeispiel: " + url.origin + url.pathname + "?engine=ecosia", "color: ForestGreen; font-size: 15px;");
 console.log("%cBeispiel: " + url.origin + url.pathname + "?curl=https://www.ecosia.org/search&cparam=q&cname=Ecosia", "color: ForestGreen; font-size: 15px;");
 console.log("%cBeispiel: setCustomEngine(\"https://www.ecosia.org/search\", \"q\", \"Ecosia\");", "color: ForestGreen; font-size: 15px;");
-console.log();
-console.log();
 
 setEngine(engine == null ? null : engine.toLowerCase());
 setCustomEngine(customurl, customparam, customname);
